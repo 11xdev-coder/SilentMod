@@ -1,0 +1,3 @@
+displayName = SIlentMod
+author = 11xdev
+version = 0.1
