@@ -1,7 +1,8 @@
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SilentMod.Items
+namespace SilentMod.Items.Weapons
 {
 	public class Iron_Lever : ModItem
 	{
@@ -21,8 +22,8 @@ namespace SilentMod.Items
 			item.useAnimation = 10; // animation speed
 			item.useStyle = 1; // using type
 			item.knockBack = 3; // item knockback
-			item.value = 1000; // item sell price
-			item.rare = 1; // item rarity
+			item.value = Item.sellPrice(gold: 1); // item sell price
+			item.rare = ItemRarityID.Blue; // item rarity
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true; // auto attack
 			item.maxStack = 1;
