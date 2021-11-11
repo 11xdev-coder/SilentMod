@@ -8,7 +8,7 @@ namespace SilentMod.Items.Tools
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Desert Digger"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Desert Hammer"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 		}
 
 		public override void SetDefaults() // object properties
