@@ -21,7 +21,7 @@ namespace SilentMod.Items.Weapons
 			item.useTime = 10; // animation speed
 			item.useAnimation = 10; // animation speed
 			item.useStyle = 1; // using type
-			item.knockBack = 3; // item knockback
+			item.knockBack = 0; // item knockback
 			item.value = Item.sellPrice(gold: 1); // item sell price
 			item.rare = ItemRarityID.Blue; // item rarity
 			item.UseSound = SoundID.Item1;
