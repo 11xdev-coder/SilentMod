@@ -35,6 +35,7 @@ namespace SilentMod.Items.Ammo
             recipe.AddIngredient(ItemID.Amber, 5);
             recipe.AddIngredient(ItemID.AntlionMandible, 1);
             recipe.AddIngredient(ItemID.Obsidian, 5);
+            recipe.AddIngredient(ItemID.PurificationPowder, 1);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this, 50);
             recipe.AddRecipe();
