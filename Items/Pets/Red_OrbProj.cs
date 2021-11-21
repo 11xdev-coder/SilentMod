@@ -28,7 +28,7 @@ namespace SilentMod.Items.Pets
 		public override void AI()
 		{
 			Player player = Main.player[projectile.owner];
-			MyPlayer modPlayer = player.GetModPlayer();
+			MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
 			if (player.dead)
 			{
 				modPlayer.Pet = false;
