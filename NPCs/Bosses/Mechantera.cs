@@ -36,12 +36,11 @@ namespace SilentMod.NPCs.Bosses
 			npc.noGravity = true;
 			npc.noTileCollide = true;
 			npc.HitSound = SoundID.NPCHit4;
-			npc.DeathSound = SoundID.NPCDeath3;
+            npc.DeathSound = SoundID.NPCDeath3;
 			npc.buffImmune[20] = true;
 			npc.buffImmune[69] = true;
 			npc.buffImmune[31] = true;
 			music = MusicID.Boss3;
-			//bossBag = mod.ItemType("OpticSpiritBag");
 		}
 
 		public override void AI()
@@ -113,7 +112,7 @@ namespace SilentMod.NPCs.Bosses
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
                 int damage = 100;
                 int type = 276;
-                Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 17);
+                Main.PlaySound(SoundID.Item, (int)npc.position.X, (int)npc.position.Y, 17);
                 float rotation = (float)Math.Atan2(vector8.Y - (Main.player[npc.target].position.Y + (Main.player[npc.target].height * 0.5f)), vector8.X - (Main.player[npc.target].position.X + (Main.player[npc.target].width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), type, damage, 0f, 0);
                 npc.ai[0] = 0;
@@ -123,7 +122,7 @@ namespace SilentMod.NPCs.Bosses
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
                 int damage = 100;
                 int type = 102;
-                Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 17);
+                Main.PlaySound(SoundID.Item, (int)npc.position.X, (int)npc.position.Y, 17);
                 float rotation = (float)Math.Atan2(vector8.Y - (Main.player[npc.target].position.Y + (Main.player[npc.target].height * 0.5f)), vector8.X - (Main.player[npc.target].position.X + (Main.player[npc.target].width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), type, damage, 0f, 0);
                 npc.ai[1] = 0;
@@ -134,7 +133,7 @@ namespace SilentMod.NPCs.Bosses
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
                 int damage = 100;
                 int type = 258;
-                Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 17);
+                Main.PlaySound(SoundID.Item, (int)npc.position.X, (int)npc.position.Y, 17);
                 float rotation = (float)Math.Atan2(vector8.Y - (Main.player[npc.target].position.Y + (Main.player[npc.target].height * 0.5f)), vector8.X - (Main.player[npc.target].position.X + (Main.player[npc.target].width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), type, damage, 0f, 0);
                 npc.ai[2] = 0;
@@ -145,7 +144,7 @@ namespace SilentMod.NPCs.Bosses
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
                 int damage = 100;
                 int type = 277;
-                Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 17);
+                Main.PlaySound(SoundID.Item, (int)npc.position.X, (int)npc.position.Y, 17);
                 float rotation = (float)Math.Atan2(vector8.Y - (Main.player[npc.target].position.Y + (Main.player[npc.target].height * 0.5f)), vector8.X - (Main.player[npc.target].position.X + (Main.player[npc.target].width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), type, damage, 0f, 0);
                 npc.ai[3] = 0;

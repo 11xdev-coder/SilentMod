@@ -25,7 +25,7 @@ namespace SilentMod.Items.Weapons
 			item.rare = ItemRarityID.Green; // the color that the item's name will be in-game
 			item.UseSound = SoundID.Item5; // The sound that this item plays when used.
 			item.autoReuse = true; // if you can hold click to automatically use it again
-			item.shoot = 1; //idk why but all the guns in the vanilla source have this
+			item.shoot = ProjectileID.WoodenArrowFriendly; //idk why but all the guns in the vanilla source have this
 			item.shootSpeed = 16f; // the speed of the projectile (measured in pixels per frame)
 			item.useAmmo = AmmoID.Arrow; // The "ammo Id" of the ammo item that this weapon uses. Note that this is not an item Id, but just a magic value.
 		}

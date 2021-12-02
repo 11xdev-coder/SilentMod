@@ -115,7 +115,7 @@ namespace SilentMod.NPCs.Bosses
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
                 int damage = 100;
                 int type = 258;
-                Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 17);
+                Main.PlaySound(SoundID.Item, (int)npc.position.X, (int)npc.position.Y, 17);
                 float rotation = (float)Math.Atan2(vector8.Y - (Main.player[npc.target].position.Y + (Main.player[npc.target].height * 0.5f)), vector8.X - (Main.player[npc.target].position.X + (Main.player[npc.target].width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), type, damage, 0f, 0);
                 npc.ai[0] = 0;
@@ -126,7 +126,7 @@ namespace SilentMod.NPCs.Bosses
                 Vector2 vector8 = new Vector2(npc.position.X + (npc.width / 2), npc.position.Y + (npc.height / 2));
                 int damage = 100;
                 int type = 96;
-                Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 17);
+                Main.PlaySound(SoundID.Item, (int)npc.position.X, (int)npc.position.Y, 17);
                 float rotation = (float)Math.Atan2(vector8.Y - (Main.player[npc.target].position.Y + (Main.player[npc.target].height * 0.5f)), vector8.X - (Main.player[npc.target].position.X + (Main.player[npc.target].width * 0.5f)));
                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), type, damage, 0f, 0);
                 npc.ai[1] = 0;
@@ -148,7 +148,7 @@ namespace SilentMod.NPCs.Bosses
 
         public override void BossLoot(ref string name, ref int potionType)
         {
-            potionType = ItemID.HealingPotion;
+            potionType = ItemID.GreaterHealingPotion;
         }
 
         private void MoveTowards(NPC npc, Vector2 playerTarget, float speed, float turnResistance)

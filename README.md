@@ -1,2 +1,0 @@
-# SilentMod
-Mod for tModLoader

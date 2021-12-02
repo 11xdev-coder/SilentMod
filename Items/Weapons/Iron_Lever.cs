@@ -20,7 +20,7 @@ namespace SilentMod.Items.Weapons
 			item.height = 32; // sprite height
 			item.useTime = 10; // animation speed
 			item.useAnimation = 10; // animation speed
-			item.useStyle = 1; // using type
+			item.useStyle = ItemUseStyleID.SwingThrow; // using type
 			item.knockBack = 0; // item knockback
 			item.value = Item.sellPrice(gold: 1); // item sell price
 			item.rare = ItemRarityID.Blue; // item rarity
@@ -34,11 +34,7 @@ namespace SilentMod.Items.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.IronBar, 5);
-			recipe.AddTile(TileID.Anvils);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.LeadBar, 5);
+			recipe.anyIronBar = true;
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

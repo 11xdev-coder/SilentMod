@@ -22,10 +22,10 @@ namespace SilentMod.Items.Potions
             item.height = 16;
             item.maxStack = 30;
             item.value = 500;
-            item.rare = 3;
+            item.rare = ItemRarityID.Orange;
             item.useAnimation = 20;
             item.useTime = 20;
-            item.useStyle = 4;
+            item.useStyle = ItemUseStyleID.HoldingUp;
             item.consumable = true;
             item.UseSound = SoundID.Item3;
             item.useTurn = true;

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+QcEiPpITpM6uon2P6uiE+cqt0UNZHllfywwlI4/PTURvLLo+dVoURqA1PSGk3F6ojGHvY8CE4w+dTG5C+6lfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matvei\\OneDrive\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\SilentMod\\SilentMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matvei\\.nuget\\packages\\tmodloader.codeassist\\0.1.3\\tmodloader.codeassist.0.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}
