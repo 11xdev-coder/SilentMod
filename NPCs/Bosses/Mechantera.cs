@@ -98,7 +98,7 @@ namespace SilentMod.NPCs.Bosses
 
             //npc.position += npc.velocity; // update our position using the velocity
 
-            MoveTowards(npc, targetPosition, 6f, 30f);
+            MoveTowards(npc, targetPosition, 10f, 30f);
 
             // FIRING
             npc.ai[0]++;

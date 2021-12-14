@@ -45,7 +45,7 @@ namespace SilentMod.NPCs.Bosses
             npc.buffImmune[24] = true;
             npc.buffImmune[39] = true;
             music = MusicID.Boss3;
-            //bossBag = mod.ItemType("OpticSpiritBag");
+            bossBag = mod.ItemType("MechanteraTreasureBag");
         }
 
         public override void AI()
@@ -103,7 +103,7 @@ namespace SilentMod.NPCs.Bosses
 
             //npc.position += npc.velocity; // update our position using the velocity
 
-            MoveTowards(npc, targetPosition, 15f, 30f);
+            MoveTowards(npc, targetPosition, 20f, 30f);
 
             // FIRING
             npc.ai[0]++;
